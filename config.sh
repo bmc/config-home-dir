@@ -31,7 +31,7 @@ h=${1:-$HOME}
 cd $h || die "No $h directory"
 
 type -p ruby >/dev/null || die "ruby not found in path"
-type -p ruby >/dev/null || die "rake not found in path"
+type -p rake >/dev/null || die "rake not found in path"
 
 mkdir -p lib bin src/mystuff
 
