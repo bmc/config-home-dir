@@ -61,3 +61,7 @@ cd shell
 clone fish-config
 cd fish-config
 bash install.sh
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+curl -L https://github.com/oh-my-fish/oh-my-fish/raw/master/bin/install | fish
+
