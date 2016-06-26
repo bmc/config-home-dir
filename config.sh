@@ -56,14 +56,16 @@ cd misc-scripts
 rake install
 cd ..
 
-mkdir -p shell
-cd shell
-clone fish-config
-cd fish-config
-bash install.sh
+# Fish-specific. Disabled for now.
+#mkdir -p shell
+#cd shell
+#clone fish-config
+#cd fish-config
+#bash install.sh
 
+#echo "Installing Oh-My-Fish"
+#curl -L https://github.com/oh-my-fish/oh-my-fish/raw/master/bin/install | fish
+
+# Zsh-specific.
 echo "Installing Oh-My-Zsh"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
-echo "Installing Oh-My-Fish"
-curl -L https://github.com/oh-my-fish/oh-my-fish/raw/master/bin/install | fish
